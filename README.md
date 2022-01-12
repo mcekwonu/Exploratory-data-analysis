@@ -20,4 +20,6 @@ cat_dict = categorical_cols[cat_col]
 
 print(cat_dict)
 
+[^ Note] TO DO
+
 - [ ] Add sample data files
