@@ -5,7 +5,6 @@ The raw input file in either .csv or .xlsx is preprocessed with categorical data
 
 The script automatically compute numerical columns and categorical columns, as well as the mapping of the categorical ordinal
 encoded values and the correspoding categorical values are stored as **.npy and .npz** files respectively.
-Save generated data heatmap.
 
 * The numerical columns values can be loaded from xxxx_numerical_col.npy using:
 ```
@@ -41,8 +40,9 @@ print(cat_dict)
 ## Highlights:
 1. Automatically encode all categorical data.
 2. Save processsed combined numerical and categorical data.
-3. Saves dictionary of categorical values and ordinal encodings and categorical columns.
-4. Saves list of numerical columns present.
+3. Save dictionary of categorical values and ordinal encodings and categorical columns.
+4. Save list of numerical columns present.
+5. Save generated data heatmap.
 
 
 
