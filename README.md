@@ -17,9 +17,8 @@ categorical_cols = categorical_cols.files
 categorical_cols = numpy.load(xxx_categorical_col.npz, allow_pickle=True)
 for cat_col in categorical_cols:
 cat_dict = categorical_cols[cat_col]
-
 print(cat_dict)
 
-[^]: TO DO
+[^1]: TO DO
 
 - [ ] Add sample data files
