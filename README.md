@@ -20,8 +20,9 @@ categorical_cols = categorical_cols.files
 * The categorical columns values mapping to each ordinal encoding can be retirved as a dictionary:
 ```
 categorical_cols = numpy.load(xxx_categorical_col.npz, allow_pickle=True)
+
 for cat_col in categorical_cols:
-cat_dict = categorical_cols[cat_col]
+      cat_dict = categorical_cols[cat_col]
 print(cat_dict)
 ```
 
