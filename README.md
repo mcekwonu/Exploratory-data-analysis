@@ -27,8 +27,13 @@ print(cat_dict)
 ```
 ### HOW TO USE:
 * Download the script exploratory_analysis.py and run via terminal or cmd:
+
 ```
-$ python -m exploratory_analysis --data_path xxxx.csv --save_dir xxxx
+~/home/User$ python -m exploratory_analysis --data_path xxxx.csv --save_dir xxxx
+```
+* Run to get help:
+```
+~/home/User$ python -m exploratory_analysis -help
 ```
 
 
