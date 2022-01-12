@@ -7,7 +7,7 @@ The script automatically compute numerical columns and categorical columns, as w
 encoded values and the correspoding categorical values are stored as **.npy and .npz** files respectively.
 
 * The numerical columns values can be loaded from xxxx_numerical_col.npy using:
-```
+```python
 numerical_cols = numpy.load(xxx_numerical_col.npy)
 ```
 * The cateogorical columns with mapping of each column values to corresponding ordinal values can be loaded with:
