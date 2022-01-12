@@ -31,7 +31,7 @@ print(cat_dict)
 ```
 ~/home/User$ python -m exploratory_analysis --data_path xxxx.csv --save_dir xxxx
 ```
-* Run to get help:
+* Get help and description of terminal inputs:
 ```
 ~/home/User$ python -m exploratory_analysis -help
 ```
