@@ -10,14 +10,17 @@ encoded values and the correspoding categorical values are stored as **.npy and 
 ```python
 numerical_cols = numpy.load(xxx_numerical_col.npy)
 ```
+
 * The cateogorical columns with mapping of each column values to corresponding ordinal values can be loaded with:
-```
+
+```python
 categorical_cols = numpy.load(xxx_categorical_col.npz, allow_pickle=True)
 categorical_cols = categorical_cols.files
 ```
 
 * The categorical columns values mapping to each ordinal encoding can be retirved as a dictionary:
-```
+
+```python
 categorical_cols = numpy.load(xxx_categorical_col.npz, allow_pickle=True)
 
 for cat_col in categorical_cols:
@@ -28,11 +31,13 @@ print(cat_dict)
 ### HOW TO USE:
 * Clone or download **exploratory_analysis.py** and run via terminal or cmd:
 
-```
+```python
 ~/home/User$ python -m exploratory_analysis --data_path xxxx.csv --save_dir xxxx
 ```
+
 * Get help and description of terminal inputs:
-```
+
+```python
 ~/home/User$ python -m exploratory_analysis -help
 ```
 
