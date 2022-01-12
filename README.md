@@ -4,7 +4,7 @@ The raw input file in either .csv or .xlsx is preprocessed with categorical data
 data is saved in .csv for use in deep learning training.
 
 The script automatically compute numerical columns and categorical columns, as well as the mapping of the categorical ordinal
-encoded values and the correspoding categorical values are stored as .npy and .npz files respectively.
+encoded values and the correspoding categorical values are stored as **.npy and .npz** files respectively.
 
 The numerical columns values can be loaded from xxxx_numerical_col.npy using:
 numerical_cols = numpy.load(xxx_numerical_col.npy)
