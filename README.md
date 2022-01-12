@@ -19,6 +19,7 @@ for cat_col in categorical_cols:
 cat_dict = categorical_cols[cat_col]
 print(cat_dict)
 
-[^1]: TO DO
+TO DO
 
-- [ ] Add sample data files
+- [ ] Add python file
+- [ ] Add sample data file
