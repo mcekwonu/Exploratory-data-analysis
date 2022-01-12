@@ -3,8 +3,9 @@
 Data preprocessing of combination of numerical and categorical data for deep learning network training.
 The raw input file in either .csv or .xlsx is preprocessed with categorical data ordinal encoding and saved in .csv for further use in deep learning embedding network.
 
-* The script automatically compute numerical columns and categorical columns, as well as the mapping of the categorical ordinal
+The script automatically compute numerical columns and categorical columns, as well as the mapping of the categorical ordinal
 encoded values and the correspoding categorical values are stored as **.npy and .npz** files respectively.
+Save generated data heatmap.
 
 * The numerical columns values can be loaded from xxxx_numerical_col.npy using:
 ```
