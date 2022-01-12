@@ -26,7 +26,7 @@ for cat_col in categorical_cols:
 print(cat_dict)
 ```
 ### HOW TO USE:
-* Download the script exploratory_analysis.py and run via terminal or cmd:
+* Clone or download **exploratory_analysis.py** and run via terminal or cmd:
 
 ```
 ~/home/User$ python -m exploratory_analysis --data_path xxxx.csv --save_dir xxxx
