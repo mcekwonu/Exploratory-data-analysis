@@ -1,7 +1,6 @@
 # Exploratory_data_analysis 
-require "Exploratory_data_analysis"
 
-* Data preprocessing of combination of numerical and categorical data for deep learning network training.
+Data preprocessing of combination of numerical and categorical data for deep learning network training.
 The raw input file in either .csv or .xlsx is preprocessed with categorical data ordinal encoding and the processed
 data is saved in .csv for use in deep learning training.
 
