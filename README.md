@@ -25,11 +25,19 @@ for cat_col in categorical_cols:
 
 print(cat_dict)
 ```
+### HOW TO USE:
+* Download the script exploratory_analysis.py and run via terminal or cmd:
+```
+$ python -m exploratory_analysis --data_path xxxx.csv --save_dir xxxx
+```
+
+
 ## Highlights:
 1. Automatically encode all categorical data.
 2. Save processsed combined numerical and categorical data.
 3. Saves dictionary of categorical values and ordinal encodings and categorical columns.
 4. Saves list of numerical columns present.
+
 
 
 **TO DO**
