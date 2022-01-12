@@ -47,5 +47,3 @@ print(cat_dict)
 
 **TO DO**
 
-- [ ] Add python file
-- [ ] Add sample data file
