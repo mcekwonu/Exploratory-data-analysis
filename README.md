@@ -31,13 +31,13 @@ print(cat_dict)
 ### HOW TO USE:
 * Clone or download **exploratory_analysis.py** and run via terminal or cmd:
 
-```python
+```bash
 ~/home/User$ python -m exploratory_analysis --data_path xxxx.csv --save_dir xxxx
 ```
 
 * Get help and description of terminal inputs:
 
-```python
+```bash
 ~/home/User$ python -m exploratory_analysis -help
 ```
 
