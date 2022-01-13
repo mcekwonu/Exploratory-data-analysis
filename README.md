@@ -4,6 +4,7 @@ Data preprocessing of combination of numerical and categorical data for deep lea
 The raw input file in either .csv or .xlsx is preprocessed with categorical data ordinal encoding and saved in .csv for further use in deep learning embedding network.
 
 # Examples
+
 The script automatically compute numerical columns and categorical columns, as well as the mapping of the categorical ordinal
 encoded values and the correspoding categorical values are stored as **.npy and .npz** files respectively.
 
@@ -29,7 +30,9 @@ for cat_col in categorical_cols:
 
 print(cat_dict)
 ```
+
 # Getting started
+
 * Clone or download **exploratory_analysis.py** and run via terminal or cmd:
 
 ```bash
@@ -43,6 +46,7 @@ print(cat_dict)
 ```
 
 # Highlights:
+
 1. Automatically encode all categorical data.
 2. Save processsed combined numerical and categorical data.
 3. Save dictionary of categorical values and ordinal encodings and categorical columns.
@@ -50,7 +54,8 @@ print(cat_dict)
 5. Save generated data heatmap.
 
 # Getting involved
+**TO DO**
 
 # Citation
-
+**TO DO**
 
