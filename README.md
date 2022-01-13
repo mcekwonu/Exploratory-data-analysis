@@ -28,7 +28,7 @@ for cat_col in categorical_cols:
 
 print(cat_dict)
 ```
-### HOW TO USE:
+# Getting started
 * Clone or download **exploratory_analysis.py** and run via terminal or cmd:
 
 ```bash
@@ -41,15 +41,13 @@ print(cat_dict)
 ~/home/User$ python -m exploratory_analysis -help
 ```
 
-
-## Highlights:
+# Highlights:
 1. Automatically encode all categorical data.
 2. Save processsed combined numerical and categorical data.
 3. Save dictionary of categorical values and ordinal encodings and categorical columns.
 4. Save list of numerical columns present.
 5. Save generated data heatmap.
 
+# Citation
 
-
-**TO DO**
 
