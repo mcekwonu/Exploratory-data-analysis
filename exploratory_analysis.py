@@ -107,49 +107,6 @@ class DataExploration:
     def merge_data(self, *dataframes):
         return pd.concat(*dataframes, axis=0, ignore_index=True)
 
-    def cramers_v(self, x, y):
-        """Computes Cramer's V statistics for categorical-categorical association
-        """
-        confusion_matrix = pd.crosstab(x, y)
-        chi_2 = chi2_contingency(confusion_matrix)[0]
-        n = confusion_matrix.sum().sum()
-        r, k = confusion_matrix.shape
-        phi_2 = chi_2 / n
-        phi_corr = max(0, phi_2 - ((k - 1) * (r - 1)) / (n - 1))
-        r_corr = r - ((r - 1) ** 2) / (n - 1)
-        k_corr = k - ((k - 1) ** 2) / (n - 1)
-        result = np.sqrt(phi_corr / min(k_corr - 1, r_corr - 1))
-        return result
-
-    def conditional_entropy(self, x, y):
-        """Computes the conditional entropy of x given y: S(x|y)
-        """
-        y_counter = Counter(y)
-        xy_counter = Counter((list(zip(x, y))))
-        total_occurences = sum(y_counter.values())
-        entropy = 0.0
-
-        for xy in xy_counter.keys():
-            p_xy = xy_counter[xy] / total_occurences
-            p_y = y_counter[xy[1]] / total_occurences
-            entropy += p_xy * np.log(p_y / p_xy)
-        return entropy
-
-    def theils_u(self, x, y):
-        """Computes Theil's U statistics (Uncertainty coefficient) for
-        categorical-categorical association.
-        """
-        s_xy = self.conditional_entropy(x, y)
-        x_counter = Counter(x)
-        total_occurences = sum(x_counter.values())
-        p_x = list(map(lambda n: n / total_occurences, x_counter.values()))
-        s_x = entropy(p_x)
-
-        if s_x == 0:
-            return 1
-        else:
-            return (s_x - s_xy) / s_xy
-
 
 if __name__ == "__main__":
     import argparse
