@@ -33,18 +33,18 @@ for cat_col in categorical_cols:
 print(cat_dict)
 ```
 
-## Getting started
+## How to use
 
-* Clone or download **exploratory_analysis.py** and run via terminal or cmd:
+* Clone or download **data_analysis.py** and run via terminal or cmd:
 
 ```bash
-~/home/User$ python -m exploratory_analysis --data_path xxxx.csv --save_dir xxxx
+~/home/User$ python -m data_analysis --data_path xxxx.csv --save_dir xxxx
 ```
 
 * Get help and description of terminal inputs:
 
 ```bash
-~/home/User$ python -m exploratory_analysis -help
+~/home/User$ python -m data_analysis -help
 ```
 
 ## Highlights:
