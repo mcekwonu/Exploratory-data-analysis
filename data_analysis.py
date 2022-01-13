@@ -168,7 +168,7 @@ if __name__ == "__main__":
                          print_summary=opt.summary,
                          save_dir=opt.save_dir)
 
-    #
+    # uncomment to run script without terminal. the `eda` instantiated above must be commented
     # eda = DataPreprocess(data_path=data_path,
     #                       print_summary=summary,
     #                       save_dir=save_dir)
